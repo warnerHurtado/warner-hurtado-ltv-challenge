@@ -1,9 +1,9 @@
+import SaveUrl from "./saveUrl/page";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div>
-        <h1>The main content</h1>
-      </div>
+    <main className="flex min-h-screen mt-12 justify-between p-10 md:p-20">
+      <SaveUrl />
     </main>
   );
 }

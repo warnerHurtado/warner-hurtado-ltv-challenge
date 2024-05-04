@@ -1,4 +1,4 @@
-import { linksList } from "@/app/config/constants/content";
+import { linksList } from "@/config/constants/content";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
 
