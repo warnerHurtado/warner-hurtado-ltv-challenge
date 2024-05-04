@@ -1,4 +1,6 @@
+export const API_URL = 'http://localhost:3000';
+
 export const linksList = [
-  { id: 0, url: "saveUrl", label: 'Save URL' },
-  { id: 1, url: "mostFrequentlyUrls", label: 'Most frequently URLS' },
+  { id: 0, url: "/", label: 'New URL' },
+  { id: 1, url: "mostFrequentlyUrls", label: 'Top 100' },
 ];

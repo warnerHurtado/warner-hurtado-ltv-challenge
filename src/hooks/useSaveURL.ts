@@ -3,8 +3,8 @@ import { useState } from "react";
 import { saveURL } from "../api";
 
 export const useSaveURL = () => {
-  const [url, setURL] = useState("");
-  const [loading, setLoading] = useState(false);
+  const [url, setURL] = useState<string>("");
+  const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
   const [shortCode, setShortCode] = useState<string | null>(null);
 
@@ -41,7 +41,7 @@ export const useSaveURL = () => {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setURL(e.target.value);
     setError(null);
-    setShortCode(null);;
+    setShortCode(null);
   };
 
   return { url, error, shortCode, loading, handleSubmit, handleChange };
