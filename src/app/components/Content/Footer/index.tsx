@@ -1,3 +1,5 @@
+import { flooterLinksList } from "@/config/constants/content";
+
 export const Footer: React.FC = () => {
   return (
     <footer className="bg-slate-900 text-white">
@@ -7,31 +9,13 @@ export const Footer: React.FC = () => {
           Warner Hurtado
         </span>
         <ul className="flex flex-wrap items-center mt-3 text-sm font-medium dark:text-white/90 sm:mt-0">
-          <li>
-            <a
-              href="https://warner-hurtado-laguna.vercel.app/en"
-              className="hover:underline me-4 md:me-6"
-            >
-              More about Warner
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/warner-hurtado/"
-              target="_blank"
-              className="hover:underline me-4 md:me-6"
-            >
-              LinkedIn
-            </a>
-          </li>
-          <li>
-            <a
-              href="mailto:warnerhurtadolagu@gmail.com"
-              className="hover:underline me-4 md:me-6"
-            >
-                Email
-            </a>
-          </li>
+          {flooterLinksList.map((link) => (
+            <li key={link.id}>
+              <a href={link.url} className="hover:underline me-4 md:me-6">
+                {link.label}
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
     </footer>

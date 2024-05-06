@@ -38,7 +38,7 @@ export default function Home() {
               <p className="text-lime-600 mt-5">
                 ✔ URL saved successfully. Short code:{" "}
                 <a
-                  className="underline"
+                  className="underline hover:text-cyan-600"
                   target="_blank"
                   href={`${API_URL}/${shortCode}`}
                 >{`${API_URL}/${shortCode}`}</a>
