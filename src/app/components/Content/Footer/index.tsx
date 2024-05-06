@@ -1,4 +1,4 @@
-import { flooterLinksList } from "@/config/constants/content";
+import { footerLinksList } from "@/config/constants/content";
 
 export const Footer: React.FC = () => {
   return (
@@ -9,7 +9,7 @@ export const Footer: React.FC = () => {
           Warner Hurtado
         </span>
         <ul className="flex flex-wrap items-center mt-3 text-sm font-medium dark:text-white/90 sm:mt-0">
-          {flooterLinksList.map((link) => (
+          {footerLinksList.map((link) => (
             <li key={link.id}>
               <a href={link.url} className="hover:underline me-4 md:me-6">
                 {link.label}
